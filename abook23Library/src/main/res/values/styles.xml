@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="from_botton_out_bottom" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/exit</item>
+        //退出时的动画
+    </style>
+
+    <style name="in_left_out_right_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/in_from_left</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/out_to_right</item>
+        //退出时的动画
+    </style>
+
+    <style name="my_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+    <style name="my_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <!--dialog 动画-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_anim_out</item>
+    </style>
+
+
+    <style name="sfdialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--&lt;!&ndash; 无标题 &ndash;&gt;-->
+        <!--<item name="android:windowBackground">@drawable/bg_search_end</item>-->
+        <!-- 自己想要的背景 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+</resources>
